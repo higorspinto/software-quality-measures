@@ -95,7 +95,9 @@ Coupling is usually contrasted with cohesion. Low coupling often correlates with
 
 For purposes of this task, we define a Module coupling as:
 
+
 ![alt text](eq1.gif "Equação 1") 
+
 
 For data and control flow coupling:
 
@@ -107,11 +109,13 @@ For data and control flow coupling:
 
 **co**: number of output control parameters
 
+
 For global coupling:
 
 **gd**: number of global variables used as data
 
 **gc**: number of global variables used as control
+
 
 For environmental coupling:
 
@@ -119,7 +123,21 @@ For environmental coupling:
 
 **r**: number of modules calling the module under consideration (fan-in)
 
-Using the Module Coupling we can measure the coupling of a class.
+
+Using the Module Coupling we can measure the coupling of a class. Let's calculate the Coupling for class *LongNumber* presented above.
+
+**di**: 10 (all data parameters passed in the methods of the class)
+
+**do**: 6 (all paremeters returned by the methods of the class)
+
+The class hasn't any input or output control parameters. **ci**:0; **co**:0
+
+The class hans't any global variables. **gd**:0; **gc**:0
+
+The class hasn't any modules called. **w**:0; 
+For purposes of this task, we assume there is at least one module calling the class. **r**:1
+
+
 
 
 ## 3) Clarity
