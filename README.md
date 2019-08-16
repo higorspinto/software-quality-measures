@@ -84,7 +84,7 @@ class LongNumber {
 
 The class *LongNumber* has six methods. We assigned 6 points to start. And then, 1 point for each iterative structure in methods *sum(Long[] a)* and *product(Long[] a)*. The McCabe cyclomatic complexity for this class is 8.
 
-If the file that you are working has more than one class, we can measure the average of McCabe cyclomatic complexity for all classes in the file. For an instance, you are working in a file that has two classes. The first class has 8 points of complexity and the second class has 6 points of complexity. Then the average of complexity in the file is 7.
+If the file that you are working has more than one class, you need to measure the average of McCabe cyclomatic complexity for all classes in the file. For an instance, you are working in a file that has two classes. The first class has 8 points of complexity and the second class has 6 points of complexity. Then the average of complexity in the file is 7.
 
 
 ## 2) Coupling
@@ -123,22 +123,25 @@ For environmental coupling:
 
 **r**: number of modules calling the module under consideration (fan-in)
 
+#### Example
 
 Using the Module Coupling we can measure the coupling of a class. Let's calculate the Coupling for class *LongNumber* presented above.
 
-**di**: 10 (all data parameters passed in the methods of the class)
+**di**= 10 (all data parameters passed in the methods of the class).
 
-**do**: 6 (all paremeters returned by the methods of the class)
+**do**= 6 (all paremeters returned by the methods of the class).
 
-The class hasn't any input or output control parameters. **ci**:0; **co**:0
+The class hasn't any input or output control parameters. **ci**=0; **co**=0
 
-The class hans't any global variables. **gd**:0; **gc**:0
+The class hans't any global variables. **gd**=0; **gc**=0
 
-The class hasn't any modules called. **w**:0; 
-For purposes of this task, we assume there is at least one module calling the class. **r**:1
+The class hasn't any modules called. **w**=0;
 
+For purposes of this task, we assume there is at least one module calling the class. **r**=1
 
+![alt text](eq2.gif "Equação 2") 
 
+Again, if the file that you are working has more then one class, you to average the Coupling of the file per class. The average is the sum of coupling of all classes divided by the number of the classes.
 
 ## 3) Clarity
 
