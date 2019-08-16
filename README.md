@@ -3,7 +3,7 @@
 Measure the quality of software is not a trivial task in software engineering. Many metrics have been developed to achieve this aim.
 In the most general sense, software quality can be defined as: An effective software process applied in a manner that creates a useful product that provides measurable value for those who produce it and those who use it [1].
 
-There are several widely accepted metrics to measure code quality that are currently being used in both research and practice to detect code smells and to find opportunities for code improvement.
+There are several widely accepted metrics to measure code quality that are currently being used in both research and practice to detect code smells and to find opportunities for code improvement [2].
 
 We are interested in measuring some metrics about software quality. In this document, we define these metrics and how to measure them with examples of Java codes.
 
