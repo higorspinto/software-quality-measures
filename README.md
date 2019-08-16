@@ -198,9 +198,15 @@ Average: 4.33 (overall readability)
 ## References
 
 [1] Pressman, R. S. (2005). Software engineering: a practitioner's approach. Palgrave Macmillan.
+
 [2] Fakhoury, S., Roy, D., Hassan, S. A., & Arnaoudova, V. (2019, May). Improving source code readability: theory and practice. In Proceedings of the 27th International Conference on Program Comprehension (pp. 2-12). IEEE Press.
+
 [3] https://en.wikipedia.org/wiki/Cyclomatic_complexity
+
 [4] https://www.theserverside.com/feature/How-to-calculate-McCabe-cyclomatic-complexity-in-Java
+
 [5] ISO/IEC TR 19759:2005, Software Engineering — Guide to the Software Engineering Body of Knowledge (SWEBOK)
+
 [6] https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+
 [7] Scalabrino, S., Linares-Vasquez, M., Poshyvanyk, D., & Oliveto, R. (2016, May). Improving code readability models with textual features. In 2016 IEEE 24th International Conference on Program Comprehension (ICPC) (pp. 1-10). IEEE.
