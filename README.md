@@ -95,7 +95,7 @@ Coupling is usually contrasted with cohesion. Low coupling often correlates with
 
 ![alt text][eq1]
 
-[eq1] 
+[eq1](eq1.gif) 
 
 ## 3) Clarity
 
