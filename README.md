@@ -186,7 +186,7 @@ For the purposes of this task, we define Readability as an average of all Clarit
 
 For instance:
 
-- identantion : 5
+- indentantion : 5
 - comments : 3
 - variables names: 4
 - reuse: 5
