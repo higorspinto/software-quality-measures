@@ -3,7 +3,9 @@
 Measure the quality of software is not a trivial task in software engineering. Many metrics have been developed to achieve this aim.
 In the most general sense, software quality can be defined as: An effective software process applied in a manner that creates a useful product that provides measurable value for those who produce it and those who use it [1].
 
-We are interested in measuring some metrics about software quality. In this document, we define these metrics and how to measure them with examples.
+There are several widely accepted metrics to measure code quality that are currently being used in both research and practice to detect code smells and to find opportunities for code improvement.
+
+We are interested in measuring some metrics about software quality. In this document, we define these metrics and how to measure them with examples of Java codes.
 
 ## 1) Cyclomatic Complexity
 
@@ -145,7 +147,53 @@ Again, if the file that you are working has more than one class, you need to ave
 
 ## 3) Clarity
 
+Code reading is one of the most frequent activities in software maintenance; before implementing changes, it is necessary to fully understand source code often written by other developers. Thus, readability is a crucial aspect of source code that might significantly influence program comprehension effort. Sometimes, readability is called as the Clarity of the code.
+
+There are many works about software clarity. Some of them created models to evaluate the clarity of code using features.
+We will use some of these features to measure the clarity of the scripts.
+
+- indentation: properly indentation of code.
+
+High grades are related to a properly indentation of classes and methods.
+
+- comments: use of comments to explain how methods work.
+
+If there are comments in the code and them explain how methods work.
+
+- variables names: properly named variables.
+
+The name of variable describes properly the variable. Can you understand the purpose of the variable read its name? 
+
+- reuse: reuse of code. repeated code is not good.
+
+High grades are related with non repeated code.
+
+- single responsibility: methods have one only responsibility.
+
+Only one responsibility for each method are related with high grades.
+
+- short methods: methods are coded in few lines.
+
+Methods are simple and written in few lines.
+
+We can create a measure of clarity by grading these features. You need to read the code of the script contained in the file and grade from **0** to **5** each of these features. 
+
 ## 4) Readability
+
+We define readability as a human judgment of how easy a text is to understand. The readability of a program is related to its maintainability, and is thus a key factor in overall software quality.
+
+For the purposes of this task we define Readability as an average of all Clarity features measured.
+
+For instance:
+
+- identantion : 5
+- comments : 3
+- variables names: 4
+- reuse: 5
+- single responsibility: 5
+- short methods: 4
+
+- average: 4.33 (overall readability)
 
 ## References
 
