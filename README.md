@@ -18,10 +18,10 @@ The cyclomatic complexity metric is always provided as a whole number. The lower
 In a modern approach, especially for the Java developer, we can simplify the McCabe cyclomatic complexity metric calculation with the following rules:
 
 - Assign one point to account for the start of the method.
-- Add one point for each conditional construct, such as an "if" condition
-- Add one point for each iterative structure
-- Add one point for each case or default block in a switch statement
-- Add one point for any additional boolean condition, such as the use of && or ||
+- Add one point for each conditional construct, such as an "if" condition.
+- Add one point for each iterative structure (for, while).
+- Add one point for each case or default block in a switch statement.
+- Add one point for any additional boolean condition, such as the use of && or ||.
 
 Let's check an example:
 
@@ -35,7 +35,57 @@ public static Long sum(Long[] a) {
     }
 ```
 
-For the method *sum* we assigned 1 point to the start of the method and 1 point for the iterative structure (for). The McCabe cyclomatic complexity for this method is 2.
+For the method *sum(Long[] a)* we assigned 1 point to the start of the method and 1 point for the iterative structure (for). The McCabe cyclomatic complexity for this method is 2.
+
+Let's see the same in a class:
+
+```
+class LongNumber {
+
+    /* Complete this function */
+    public static Long sum(Long[] a) {
+        Long sum = 0L;
+        for(Long x : a) {
+            sum += x;
+        }
+        return sum;
+    }
+
+    /* Complete this function */
+    public static Long add(Long x, Long y) {
+        return (x+y);
+    }
+
+    /* Complete this function */
+    public static Long subtract(Long x, Long y) {
+        return (x-y);
+    }
+
+    /* Complete this function */
+    public static Long multiply(Long x, Long y) {
+        return (x*y);
+    }
+
+    /* Complete this function */
+    public static Long product(Long[] a) {
+        Long pro = 1L;
+        for(Long x : a) {
+            pro *= x;
+        }
+        return pro;
+    }
+
+    /* Complete this function */
+    public static Long divide(Long x, Long y) {
+        return (x/y);
+    }
+}
+```
+
+The class *LongNumber* has six methods. We assigned 6 points to start. And then, 1 point for each iterative structure in methods *sum(Long[] a)* and *product(Long[] a)*. The McCabe cyclomatic complexity for this class is 8.
+
+If the file that you are working has more than one class, we can measure the average of McCabe cyclomatic complexity for all classes in the file. For an instance, you are working in a file that has two classes. The first class has 8 points of complexity and the second class has 6 points of complexity. Then the average of complexity in the file is 7.
+
 
 ## 2) Coupling
 
