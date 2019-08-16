@@ -93,6 +93,23 @@ In software engineering, coupling is the degree of interdependence between softw
 
 Coupling is usually contrasted with cohesion. Low coupling often correlates with high cohesion, and vice versa. Low coupling is often a sign of a well-structured computer system and a good design, and when combined with high cohesion, supports the general goals of high readability and maintainability.
 
+For data and control flow coupling:
+
+**di**: number of input data parameters
+**ci**: number of input control parameters
+**do**: number of output data parameters
+**co**: number of output control parameters
+
+For global coupling:
+
+**gd**: number of global variables used as data
+**gc**: number of global variables used as control
+
+For environmental coupling:
+
+**w**: number of modules called (fan-out)
+**r**: number of modules calling the module under consideration (fan-in)
+
 ![alt text](eq1.gif "Equação 1") 
 
 ## 3) Clarity
