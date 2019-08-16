@@ -99,7 +99,7 @@ For purposes of this task, we define a Module coupling as:
 ![alt text](eq1.gif "Equação 1") 
 
 
-For data and control flow coupling:
+#### For data and control flow coupling:
 
 **di**: number of input data parameters
 
@@ -110,14 +110,14 @@ For data and control flow coupling:
 **co**: number of output control parameters
 
 
-For global coupling:
+#### For global coupling:
 
 **gd**: number of global variables used as data
 
 **gc**: number of global variables used as control
 
 
-For environmental coupling:
+#### For environmental coupling:
 
 **w**: number of modules called (fan-out)
 
@@ -125,15 +125,15 @@ For environmental coupling:
 
 #### Example
 
-Using the Module Coupling we can measure the coupling of a class. Let's calculate the Coupling for class *LongNumber* presented above.
+Using the Module Coupling we can measure the Coupling of a class. Let's calculate the Coupling for class *LongNumber* presented above.
 
 **di**= 10 (all data parameters passed in the methods of the class).
 
-**do**= 6 (all paremeters returned by the methods of the class).
+**do**= 6 (all parameters returned by the methods of the class).
 
 The class hasn't any input or output control parameters. **ci**=0; **co**=0
 
-The class hans't any global variables. **gd**=0; **gc**=0
+The class hasn't any global variables. **gd**=0; **gc**=0
 
 The class hasn't any modules called. **w**=0;
 
@@ -141,7 +141,7 @@ For purposes of this task, we assume there is at least one module calling the cl
 
 ![alt text](eq2.gif "Equação 2") 
 
-Again, if the file that you are working has more then one class, you to average the Coupling of the file per class. The average is the sum of coupling of all classes divided by the number of the classes.
+Again, if the file that you are working has more than one class, you need to average the Coupling of the file per class. The average is the sum of Coupling of all classes divided by the number of classes.
 
 ## 3) Clarity
 
