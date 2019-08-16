@@ -93,9 +93,7 @@ In software engineering, coupling is the degree of interdependence between softw
 
 Coupling is usually contrasted with cohesion. Low coupling often correlates with high cohesion, and vice versa. Low coupling is often a sign of a well-structured computer system and a good design, and when combined with high cohesion, supports the general goals of high readability and maintainability.
 
-![alt text][eq1]
-
-[eq1](eq1.gif) 
+![alt text](eq1.gif "Equação 1") 
 
 ## 3) Clarity
 
