@@ -98,7 +98,7 @@ Coupling is usually contrasted with cohesion. Low coupling often correlates with
 For purposes of this task, we define a Module coupling as [6]:
 
 
-![alt text](eq1.gif "Equação 1") 
+![alt text](img/eq1.gif "Equação 1") 
 
 
 #### For data and control flow coupling:
@@ -141,7 +141,7 @@ The class hasn't any modules called. **w**=0;
 
 For purposes of this task, we assume there is at least one module calling the class. **r**=1
 
-![alt text](eq2.gif "Equação 2") 
+![alt text](img/eq2.gif "Equação 2") 
 
 Again, if the file that you are working has more than one class, you need to average the Coupling of the file per class. The average is the sum of Coupling of all classes divided by the number of classes.
 
