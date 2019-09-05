@@ -145,7 +145,7 @@ For purposes of this task, we assume there is at least one module calling the cl
 
 Again, if the file that you are working has more than one class, you need to average the Coupling of the file per class. The average is the sum of Coupling of all classes divided by the number of classes.
 
-## 3) Clarity
+## 3) Readability
 
 Code reading is one of the most frequent activities in software maintenance; before implementing changes, it is necessary to fully understand source code often written by other developers. Thus, readability is a crucial aspect of source code that might significantly influence program comprehension effort [7]. Sometimes, readability is called the Clarity of the code.
 
@@ -178,7 +178,7 @@ Methods are simple and written in a few lines.
 
 We can create a measure of clarity by grading these features. You need to read the code of the script contained in the file and grade from **0** to **5** each of these features. 
 
-## 4) Readability
+### Overall Readability
 
 We define readability as a human judgment of how easy a text is to understand. The readability of a program is related to its maintainability and is thus a key factor in overall software quality.
 
